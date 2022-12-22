@@ -2,6 +2,7 @@ import cv2
 import streamlit as st
 from PIL import Image
 import numpy as np
+from io import BytesIO
 
 st.header('Face Detection with OpenCV')
 image = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
