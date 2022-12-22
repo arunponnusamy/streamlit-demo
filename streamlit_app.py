@@ -30,6 +30,6 @@ if image is not None:
   img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
   st.image(img_rgb)
   out = Image.fromarray(img_rgb)
-  st.download_button('Download output image', convert(out), 'output.png', 'image/png')
+  st.download_button('Download output image', convert_image(out), 'output.png', 'image/png')
   
 
