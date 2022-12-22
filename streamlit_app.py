@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 
-st.header('Streamlit Demo')
+st.header('Face Detection with OpenCV')
 image = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
 
 face_detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
